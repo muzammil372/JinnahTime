@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinnah Times - News</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .site-header {
+      
+      color: #ffffff;
+      padding: 10px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-container {
+      margin-bottom: 10px;
+    }
+
+    .logo-container img {
+      height: 60px;
+    }
+
+    .main-nav {
+      position: relative;
+    }
+
+    .main-nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 15px;
+    }
+
+    .main-nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      cursor: pointer;
+    }
+
+    /* Mobile View */
+    @media (max-width: 768px) {
+      .main-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #be181a;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .main-nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .site-header {
+        text-align: right;
+      }
+
+      .logo-container {
+        text-align: center;
+      }
+    }
+
+    .news-grid {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .news-card {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .news-content {
+      padding: 20px;
+      text-align: right;
+    }
+
+    .news-content h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .news-content p {
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #be181a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-social-icons img {
+      width: 24px;
+      height: 24px;
+      margin: 0 10px;
+      vertical-align: middle;
+      filter: invert(1);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Jinnah Times Logo" />
+    </div>
+
+    <nav class="main-nav">
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Pakistan</a></li>
+        <li><a href="#">Crime</a></li>
+        <li><a href="#">Health</a></li>
+        <li><a href="#">World</a></li>
+        <li><a href="#">Contact</a></li>
+
+    
+      </ul>
+    </nav>
+    
+    <div class="menu-toggle" onclick="toggleMenu()" id="menuIcon">☰</div>
+
+  </header>
+
+  <main class="news-grid" id="newsGrid">
+    <div class="news-card">
+      <img src="https://urdu.arynews.tv/wp-content/uploads/2025/05/bla-attack-khuzdar-696x342.jpg" alt="خبر کی تصویر">
+      <div class="news-content">
+        <h2> پاکستان میں بھارتی دہشت گردی کروانے میں بی ایل اے کی سہولت کاری بے نقاب ہوگئی</h2>
+        <p>سیکیورٹی ذرائع کا کہنا ہے کہ بنیان مرصول میں ہزیمت اٹھانے کے بعد بھارتی اسپانسرڈ پراکسیز پاکستان میں دہشت گردی پھیلانے لگیں۔
+
+          ’10 مئی کے بعد بھارت کے مختلف سوشل میڈیا ہینڈلرز نے بلوچستان پر حملوں کی دھمکیاں دیں، بھارتی انسپانسرڈ کالعدم بی ایل اے کے ذریعے بھارت، بلوچستان میں دہشت گردی پھیلانے میں سرگرم ہے۔‘
+          
+          ’خضدار میں بی ایل اے کا اسکول بس پر بزدلانہ حملہ اسی سازش کی کڑی ہے، حملے میں تین معصوم بچوں سمیت 5 افراد شہید اور متعدد بچے شدید زخمی ہیں۔‘
+          
+          یہ پڑھیں: خضدار: بھارتی اسپانسرڈ دہشت گردوں کا اسکول بس پر حملہ، 3 بچوں سمیت 5 افراد شہید
+          
+          سیکیورٹی ذرائع کے مطابق مودی حکومت بھارتی عوام کی اپنی شکست سے توجہ ہٹانے کے لیے پراکسیز سے دہشت گردی پھیلارہی ہے، ڈی جی آئی ایس پی آر متعدد پریس بریفنگز میں بھارت کی پاکستان میں دہشت گردی کے شواہد منظرعام پر لاچکے ہیں۔
+          
+          بھارتی حکومت کے زیر سرپرستی راجستھان میں دہشت گردوں کی تربیت کے لیے 21 کیمپ موجود ہیں، بھارتی جاسوس کلبھوشن یادیو کا پاکستان میں دہشت گردی کی سہولت کاری کا واضح اعتراف موجود ہے۔
+          
+          سیکیورٹی ذرائع کا کہنا ہے کہ جعفر ایکسپریس حملے میں دہشت گرد بھارتی سہولت کاروں سے افغانستان میں رابطے میں تھے، بھارت کی سیاسی قیادت، میڈیا پاکستان میں بی ایل اے جیسے دہشت گرد گروپوں کی پشت پناہی کررہے ہیں۔
+          
+          سیکیورٹی ذرائع کا مزید کہنا ہے کہ بھارت سافٹ ٹارگٹس کو نشانہ بنا کر دہشت گردی کو فروغ دے رہا ہے، پاکستان بھارتی دہشت گردی کی ہرشکل کو پاکستان سے جڑ سے اکھاڑ کر رہے گا۔۔</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="tel:03151234567" style="color: #fff;">0315-1234567</a> | <a href="tel:03231234567" style="color: #fff;">0323-1234567</a></p>
+    <div class="footer-social-icons">
+      <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" />
+      </a>
+      <a href="https://www.facebook.com" target="_blank" title="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.youtube.com" target="_blank" title="YouTube">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+      </a>
+    </div>
+  </footer>
+
+scirpt
+
+</body>
+</html>
