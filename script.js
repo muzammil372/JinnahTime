@@ -65,26 +65,42 @@
 
 
 
-  function toggleMenu() {
-    const nav = document.getElementById("navLinks");
-    const icon = document.getElementById("menuIcon");
-    nav.classList.toggle("show");
 
-    if (nav.classList.contains("show")) {
-      icon.textContent = "✖";
-    } else {
-      icon.textContent = "☰";
-    }
+
+  function openNav() {
+    document.getElementById('sideNav').classList.add('active');
+    document.getElementById('overlay').classList.add('active');
   }
 
-  function toggleMenu() {
-    const nav = document.getElementById("navLinks");
-    const icon = document.getElementById("menuIcon");
-    nav.classList.toggle("show");
+  function closeNav() {
+    document.getElementById('sideNav').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
+  }zz
 
-    if (nav.classList.contains("show")) {
-      icon.textContent = "✖";
-    } else {
-      icon.textContent = "☰";
-    }
+
+
+
+
+
+
+
+
+
+
+  const closeBtn = document.getElementById('closeBtn');
+  const overlays = document.getElementById('overlays');
+
+  menuToggle.onclick = () => {
+    sideNav.classList.add('show');
+    overlays.classList.add('show');
+  }
+
+  closeBtn.onclick = () => {
+    sideNav.classList.remove('show');
+    overlays.classList.remove('show');
+  }
+
+  overlay.onclick = () => {
+    sideNav.classList.remove('show');
+    overlays.classList.remove('show');
   }
